@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+   --cor1: #1d2a31;
+   --cor2: #2f728d;
+   --cor3: #A5C9CA;
+   --cor4: #E7F6F2;
+   --cor5: #223333;
+
+   --fonte1: font-family: 'Montserrat', sans-serif;
+   --fonte2: font-family: 'Bebas Neue', cursive;
+   --fonte3: font-family: 'Poppins', sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: var(--cor1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(img/blue_diagonal_square_grid_pattern_background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.container {
+   width: 1150px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: stretch;
+   flex-wrap: wrap;
+   margin-top: 65px;
+}
+
+.container .card {
+   position: relative;
+   padding: 15px;
+   width: 300px;
+   margin: 35px;
+   background-color: var(--cor2);
+   border-radius: 20px;
+   
+}
+
+.container .card:hover {
+   transform: scale(1.1);
+   background-color: var(--cor3);
+   color: var(--cor4);
+   transition: 0.5s;
+   transition-delay: 1.5ms;
+   box-shadow: 0px 15px 10px #00000077;
+}
+
+.container .card .imag img {
+   position: relative;
+   width: 275px;
+   height: 150px;
+   border-radius: 15px;
+   left: -2px;
+   box-shadow: 0px 5px 5px #00000066;
+}
+
+.container .card .conteudo {
+   color: #ceeaeb;
+   text-align: justify;
+}
+
+.container .card .conteudo:hover {
+   color: var(--cor5);
+}
+
+.container .card .conteudo h1 {
+   font-size: 1.5em;
+   font-family: 'Poppins';
+   margin-top: 15px;
+   color: var(--cor1);
+   letter-spacing: 2.5px;
+   font-weight: 400;
+}
+
+.container .card .conteudo p {
+   margin: 10px 0px 10px 0px;
+   font-family: 'Montserrat';
+   font-weight: 500;
+}
+
+.container .card .conteudo a {
+   font-family: 'Bebas Neue';
+   letter-spacing: 2.5px;
+   font-size: 0.9em;
+   text-decoration: none;
+   color: var(--cor3);
+   background-color: #2a3e64;
+   padding: 13px;
+   position: relative;
+   display: inline-block;
+   text-align: center;
+   left: 83px;
+   margin-top: 20px;
+   border-radius: 20px;
+}
+
+.container .card .conteudo a:hover {
+   background-color: var(--cor4);
+   color: var(--cor2);
+   transition: 0.5s;
+}
+
