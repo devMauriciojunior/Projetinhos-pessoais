@@ -27,7 +27,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: url(img/blue_diagonal_square_grid_pattern_background.jpg);
+   background-image: url(img/Fundo1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -35,9 +35,9 @@ body {
 
 .container {
    width: 1150px;
+   height: 100%vh;
    display: flex;
    justify-content: space-evenly;
-   align-items: stretch;
    flex-wrap: wrap;
    margin-top: 65px;
 }
@@ -85,26 +85,29 @@ body {
    margin-top: 15px;
    color: var(--cor1);
    letter-spacing: 2.5px;
-   font-weight: 400;
+   font-weight: 500;
+   padding-left: 5px;
 }
 
 .container .card .conteudo p {
-   margin: 10px 0px 10px 0px;
+   margin-top: 10px;
    font-family: 'Montserrat';
    font-weight: 500;
+   font-size: 0.8em;
+   line-height: 1.5em;
+   padding: 5px;
 }
 
 .container .card .conteudo a {
    font-family: 'Bebas Neue';
-   letter-spacing: 2.5px;
+   letter-spacing: 3px;
    font-size: 0.9em;
    text-decoration: none;
    color: var(--cor3);
    background-color: #2a3e64;
-   padding: 13px;
+   padding: 10px;
    position: relative;
    display: inline-block;
-   text-align: center;
    left: 83px;
    margin-top: 20px;
    border-radius: 20px;
@@ -115,4 +118,3 @@ body {
    color: var(--cor2);
    transition: 0.5s;
 }
-
