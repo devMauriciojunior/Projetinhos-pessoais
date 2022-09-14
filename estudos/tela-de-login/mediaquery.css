@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px){
+   .efeito-vidro .formu{
+      width: 250px;
+      height: 400px;
+   }
+
+   .formu h2 {
+      font-size: 1em;
+   }
+
+   .formu div .inp, input[type="submit"]{
+      width: 150px
+   }
+
+   .formu p {
+      font-size: 0.8em;
+   }
+
+   .formu .ess {
+      font-size: 1em
+   }
+
+   .efeito-vidro img {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+   .efeito-vidro .formu {
+      width: 500px;
+      height: 420px;
+   }
+
+   .formu div .inp, input[type="submit"]{
+      width: 320px
+   }
+
+   .formu p {
+      font-size: 1.2em;
+   }
+
+   .formu .ess {
+      font-size: 1.3em
+   }
+
+   .efeito-vidro img {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .efeito-vidro .formu {
+      width: 600px;
+      height: 420px;
+   }
+
+   .formu .usu, .sen, .btn {
+      translate: 60%;
+   }
+
+   .ess {
+      translate: 135%;
+   }
+
+   .efeito-vidro img {
+      position: absolute;
+      display: block;
+      width: 250px;
+      top: 30%;
+      left: 5%;
+   }
+}
