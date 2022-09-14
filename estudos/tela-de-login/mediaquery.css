@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 768px){
    .efeito-vidro .formu{
-      width: 250px;
-      height: 400px;
+      width: 270px;
+      height: 410px;
    }
 
    .formu h2 {
@@ -29,8 +29,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
    .efeito-vidro .formu {
-      width: 500px;
-      height: 420px;
+      width: 490px;
+      height: 450px;
    }
 
    .formu div .inp, input[type="submit"]{
@@ -52,16 +52,16 @@
 
 @media screen and (min-width: 1200px) {
    .efeito-vidro .formu {
-      width: 600px;
+      width: 700px;
       height: 420px;
    }
 
    .formu .usu, .sen, .btn {
-      translate: 60%;
+      translate: 70%;
    }
 
    .ess {
-      translate: 135%;
+      translate: 155%;
    }
 
    .efeito-vidro img {
@@ -69,6 +69,6 @@
       display: block;
       width: 250px;
       top: 30%;
-      left: 5%;
+      left: 10%;
    }
 }
