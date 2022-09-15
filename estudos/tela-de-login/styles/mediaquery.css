@@ -56,8 +56,12 @@
       height: 420px;
    }
 
-   .formu .usu, .sen, .btn {
+   .formu .usu, .sen {
       translate: 70%;
+   }
+
+   .formu .btn {
+      translate: 75%;
    }
 
    .ess {
