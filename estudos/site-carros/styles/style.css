@@ -11,4 +11,32 @@ body, html {
    height: 100vh;
    color: white;
    background-color: black;
+   display: flex;
+   justify-content: center;
+}
+
+main {
+   width: 80vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   overflow: auto;
+}
+
+main img {
+   height: 100%;
+   width: 100%;
+   flex-shrink: 50;
+   object-fit: cover;
+   position: sticky;
+   top: 0;
+}
+
+::-webkit-scrollbar {
+   width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: blue;
+   border-radius: 20px;
 }
