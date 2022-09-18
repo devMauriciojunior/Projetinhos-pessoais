@@ -1,5 +1,11 @@
 @charset "UTF_8";
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
    margin: 0;
    padding: 0;
@@ -14,58 +20,24 @@ body, html {
    list-style-type: none;
 }
 
-/*HEADER*/
-header {
-   width: 100%;
-   height: 40px;
-   background-color: rgb(10, 68, 68);
-   
-}
-
-.container-nav {
-   height: 40px;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   font-size: 1.2em;
-}
-
-nav {
-   display: flex;
-   justify-content: center;
-   margin-right: 10%;
-}
-
-.container-nav nav ul {
-   display: flex;
-}
-
-.container-nav ul li {
-   list-style-type: none;
-   margin: 0px 20px;
-   text-align: center;
-}
-
 /*CONTEUDO*/
 
 main {
-   widh: 90vw;
+   width: 100vw;
    height: 100vh;
-   display: flex;
-   flex-direction: column;
-   overflow: none;
 }
 
 ::-webkit-scrollbar {
    display: none;
 }
 
+/*INICIO*/
 .tela-inicial {
    width: 100vw;
    height: 100vh;
    background: url(../imgs/img-inicial.jpg) no-repeat center;
    background-size: cover;
-   filter: blur(3px);
+   filter: blur(2px);
 }
 
 .texto {
@@ -76,17 +48,83 @@ main {
 
    padding: 30px;
    border-radius: 20px;
-   line-height: 5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   line-height: 3.5em;
 }
 
 .texto p {
    font-size: 1.5em;
+   font-family: 'Courgette', cursive;
 }
 
 .texto h1 {
-   font-size: 2em;
+   font-size: 2.5em;
+   text-transform: uppercase;
+   font-family: 'Catamaran', sans-serif;
+   letter-spacing: 5px;
 }
 
+div.titulo {
+   width: 100%;
+   height: 200px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.titulo h1 {
+   font-size: 3em;
+   color: black;
+   text-transform: uppercase;
+   word-spacing: 10px;
+   letter-spacing: 5px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/*CARROS*/
+#lambo {
+   width: 100vw;
+   height: 115vh;
+   background: url(../imgs/Lamborghini.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+#ferra {
+   width: 100vw;
+   height: 115vh;
+   background: url(../imgs/Ferrari.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+#pors {
+   width: 100vw;
+   height: 115vh;
+   background: url(../imgs/Porsche.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+#mcla {
+   width: 100vw;
+   height: 115vh;
+   background: url(../imgs/Mclaren.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+#must {
+   width: 100vw;
+   height: 115vh;
+   background: url(../imgs/Ford.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
 
 
 
