@@ -7,29 +7,33 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
    <link rel="stylesheet" href="./src/CSS/reset.css">
    <link rel="stylesheet" href="./src/CSS/style.css">
    <link rel="stylesheet" href="./src/CSS/scroll.css">
    <title>Mini Portifólio</title>
 </head>
 <body>
+
    <main class="card">
       <div class="my-informations">
          <img src="src/Imagens/foto-perfil.jpg" alt="foto de perfil">
          <h1 class="nome">Mauricio Junior</h1>
          <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
       </div>
+
       <div class="content">
          <ul class="abas">
-            <li class="aba selecionado">
+            <li class="aba selecionado" id="sobre-mim">
                <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
             </li>
-            <li class="aba">
+            <li class="aba" id="minhas-redes">
                <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
             </li>
          </ul>
+
          <div class="informations-abas">
-            <div class="information selecionado">
+            <div class="information selecionado" id="information-sobre-mim">
                <h3 class="subtitle">Sobre</h3>
                <div class="description">
                   <p>Oi! meu nome é Mauricio Junior, seja bem-vindo(a)!</p>
@@ -42,9 +46,8 @@
                </div>
             </div>
             
-            <div class="information">
+            <div class="information" id="information-redes-sociais">
                <h3 class="subtitle">Minha redes</h3>
-
                <ul class="social-networks">
                   <li><a class="github" href="https://github.com/devMauriciojunior" target="_blank">Github</a></li>
                   <li><a class="instagram" href="https://www.instagram.com/m.junizx/" target="_blank">Instagram</a></li>
@@ -55,5 +58,7 @@
          </div>
       </div>
    </main>
+
+   <script src="src/js/index.js"></script>
 </body>
 </html>
