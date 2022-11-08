@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         font: 20px normal arial;
+         background-color: darkblue;
+         color: wheat;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         overflow: hidden;
+      }
+
+      button {
+         width: 100px;
+         height: 50px;
+         font: 20px normal arial;
+      }
+   </style>
+</head>
+<body>
+   <div>
+      <button id="id">Toque</button>
+   </div>
+   <script>
+      let botao = document.querySelector('button#id')
+      let audio = new Audio('kasino.mp3')
+      botao.addEventListener('click', toque)
+      audio.addEventListener('click', toque)
+
+      function toque() {
+         document.body.style.background = '#e48407'
+         audio.play()
+
+      }
+   </script>
+</body>
+</html>
