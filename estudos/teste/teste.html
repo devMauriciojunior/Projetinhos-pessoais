@@ -15,6 +15,7 @@
          align-items: center;
          height: 100vh;
          overflow: hidden;
+         
       }
 
       button {
@@ -22,23 +23,31 @@
          height: 50px;
          font: 20px normal arial;
       }
+
+      video {
+         width: 100%;
+         display: none;
+      }
    </style>
 </head>
 <body>
-   <div>
-      <button id="id">Toque</button>
+
+   <div id="divi">
+      <button id="btn" onclick="toque()">Toque</button>
+
    </div>
+   <video id="vid" src="video.mp4" autoplay></video>
+
+
    <script>
-      let botao = document.querySelector('button#id')
-      let audio = new Audio('kasino.mp3')
-      botao.addEventListener('click', toque)
-      audio.addEventListener('click', toque)
-
       function toque() {
-         document.body.style.background = '#e48407'
-         audio.play()
+         let botao = document.querySelector('button#btn')
 
-      }
+         document.getElementById('divi').style.display = 'none'
+         document.getElementById('vid').style.display = 'block'
+         //audio.pay()
+         }
+      
    </script>
 </body>
 </html>
