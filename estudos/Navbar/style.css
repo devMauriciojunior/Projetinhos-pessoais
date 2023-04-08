@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins & display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: dimgray;
+   color: whitesmoke;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.3rem;
+   width: 100vw;
+   height: 100vh;
+   background: url(fundo.jpg) no-repeat center;
+   background-size: cover;
+}
+
+header {
+   padding: 0 2rem;
+   position: relative;
+}
+
+
+/*OPÇÕES DE LINKS*/
+.navbar {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 0px;
+}
+
+.links {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+li {
+   display: inline-block;
+   position: relative;
+   padding: 10px 20px;
+   
+}
+
+li::before {
+   content: "";
+   background-color: rgba(80, 201, 155, 0.281);
+   display: block;
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+   transition: transform 300ms ease;
+   transform-origin: right;
+   transform: scaleX(0);
+   border-radius: 5px;
+
+}
+
+li:hover::before {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+
+/*ICONE HAMBURGUER*/
+.menu {
+   color: #fff;
+   cursor: pointer;
+   font-size: 1.5rem;
+   display: none;
+}
+
+
+/*MENU SUSPENSO*/
+.menu-suspenso {
+   height: 0;
+   display: none;
+   position: absolute;
+   right: 2rem;
+   top: 75px;
+   width: 250px;
+   background: rgba(255, 255 , 255, 0.2);
+   backdrop-filter: blur(5px);
+   border-radius: 10px;
+   overflow: hidden;
+   transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-suspenso.aberto {
+   height: 256px;
+}
+
+.menu-suspenso li {
+   list-style: none;
+   padding: 20px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+/*MEDIA QUERRY*/
+@media(max-width: 900px) {
+   nav .links {
+      display: none;
+   }
+
+   .menu {
+      display: block;
+   }
+
+   .menu-suspenso {
+      display: block;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+}
+
+@media(max-width: 550px) {
+   .menu-suspenso {
+      left: 2rem;
+      width: unset;
+   }
+
+   h1 {
+      font-size: 1.1rem;
+   }
+}
