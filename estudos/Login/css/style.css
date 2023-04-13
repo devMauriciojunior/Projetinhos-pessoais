@@ -10,6 +10,7 @@
 body {
     height: 100vh;
     font-family: 'Poppins', sem serifa;
+    background-color: rgba(150, 150, 255, 0.18);
 }
 
 main {
@@ -19,7 +20,7 @@ main {
 .login {
     width: 50%;
     max-width: 50%;
-    background-color: #fff;
+    
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,8 +28,13 @@ main {
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
+    font-size: 2rem;
+    margin: 30px 0 0px;
+    letter-spacing: 3px;
+}
+
+img {
+    width: 150px;
 }
 
 .formulario {
@@ -42,23 +48,24 @@ h1 {
 }
 /* INPUTS */
 .usuario, .senha, .btn {
-    margin: 20px;
+    margin: 10px;
     font-size: 1.2rem;
     text-align: center;
     width: 80%;
 }
 
 label {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 input[type="text"], input[type="password"] {
     width: 100%;
-    padding: 15px;
-    margin: 10px auto;
+    padding: 10px;
+    margin: 15px auto;
     border: none;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.50);
+    background-color: transparent;
 }
 
 input[type="text"]:focus-visible, input[type="password"]:focus-visible {
@@ -73,19 +80,19 @@ input[type="text"]:hover, input[type="password"]:hover {
 }
 
 input::placeholder {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 /* BOTÃO ENVIAR */
 input[type="submit"] {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 5px;
     width: 70%;
-    height: 45px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     background-color: rgba(0, 0, 0, 0.316);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -95,7 +102,7 @@ input[type="submit"]:hover {
 }
 /* IMG DE FUNDO */
 .fundo {
-    background: url(../img/Background3.jpg) center;
+    background: url(../img/Background3.jpg) no-repeat center;
     height: 100vh;
     width: 100vw;
 }

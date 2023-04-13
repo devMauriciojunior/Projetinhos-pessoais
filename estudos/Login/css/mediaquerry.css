@@ -1,18 +1,22 @@
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 150px) and (max-width: 768px){
+   body {
+      background-color: rgba(150, 150, 255, 0.18);
+   }
+   
    .fundo {
       display: none;
    }
 
    .login {
-      width: 320px;
-      max-width: 100%;
+      min-width: 80%;
+      max-width: 120%;
       margin: 0 auto;
-      background-color: rgba(0, 0, 255, 0.180);
+      background-color: transparent;
    }
 
    .formulario {
-      height: 90%;
-      width: 90%;
+      height: 100%;
+      width: 100%;
    }
 
    h1 {
@@ -21,12 +25,13 @@
    }
 
    img {
-      width: 170px;
+      max-width: 230px;
       margin-bottom: 50px;
    }
 /* INPUTS */
    .usuario, .senha, .btn {
       margin: 0;
+      width: 80%;
    }
 
    label {
@@ -38,7 +43,6 @@
       margin: 10px auto;
       border: none;
       border-bottom: 0.5px solid rgba(0, 0, 0, 0.50);
-      background-color: transparent;
    }
 
    input[type="text"]:hover, input[type="password"]:hover {
@@ -64,13 +68,73 @@
       height: 30px;
       border-radius: 10px;
       border: none;
-      background-color: rgba(0, 0, 0, 0.316);
+      background-color: rgba(0, 0, 0, 0.178);
       font-size: 0.9rem;
-  }
+   }
 
-  input[type="submit"]:hover {
-   transform: scale(1.01);
-   font-size: 1rem;
-   background-color: #03385d69;
+   input[type="submit"]:hover {
+      transform: scale(1.01);
+      font-size: 1rem;
+      background-color: #03385d41;
+   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+   .login, .formulario {
+      width: 100%;
+   }
+
+   .usuario, .senha, .btn {
+      margin: 0;
+      width: 80%;
+   }
+
+   h1 {
+      margin: 50px 0px 0px 0px;
+      font-size: 1.5rem;
+   }
+
+   label {
+      font-size: 1rem;
+   }
+
+   input[type="text"], input[type="password"] {
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.50);
+   }
+
+   input[type="text"]:hover, input[type="password"]:hover {
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.800);
+   }
+
+   input[type="text"]:focus-visible, input[type="password"]:focus-visible {
+      outline: none;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.900);
+      transform: scaleX(1.05);
+      transition: ease-in-out 0.1s;
+   }
+
+   input::placeholder {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+   }
+/* BOTÃO ENVIAR */
+   input[type="submit"] {
+      margin-top: 15px;
+      padding: 5px;
+      width: 80%;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.178);
+      font-size: 0.9rem;
+   }
+
+   input[type="submit"]:hover {
+      transform: scale(1.02);
+      font-size: 1rem;
+      background-color: #03385d41;
+   }
 }
