@@ -1,0 +1,76 @@
+@media screen and (max-width: 320px) {
+   .fundo {
+      display: none;
+   }
+
+   .login {
+      width: 320px;
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 255, 0.180);
+   }
+
+   .formulario {
+      height: 90%;
+      width: 90%;
+   }
+
+   h1 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+   }
+
+   img {
+      width: 170px;
+      margin-bottom: 50px;
+   }
+/* INPUTS */
+   .usuario, .senha, .btn {
+      margin: 0;
+   }
+
+   label {
+      font-size: 1rem;
+   }
+
+   input[type="text"], input[type="password"] {
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.50);
+      background-color: transparent;
+   }
+
+   input[type="text"]:hover, input[type="password"]:hover {
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.800);
+   }
+
+   input[type="text"]:focus-visible, input[type="password"]:focus-visible {
+      outline: none;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.900);
+      transform: scaleX(1.05);
+      transition: ease-in-out 0.1s;
+   }
+
+   input::placeholder {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+   }
+/* BOTÃO ENVIAR */
+   input[type="submit"] {
+      margin-top: 15px;
+      padding: 5px;
+      width: 100%;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.316);
+      font-size: 0.9rem;
+  }
+
+  input[type="submit"]:hover {
+   transform: scale(1.01);
+   font-size: 1rem;
+   background-color: #03385d69;
+}
+}
