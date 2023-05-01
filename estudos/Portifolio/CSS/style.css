@@ -32,6 +32,27 @@ body {
    overflow-x: hidden;
 }
 
+.Stop {
+   width: 50px;
+   height: 50px;
+   background-color: var(--corMaisEscura);
+   color: var(--corClara);
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 50%;
+   display: grid;
+   place-items: center;
+   cursor: pointer;
+   transition: .3s;
+   opacity: .7;
+}
+
+.Stop:hover {
+   background-color: #9b6a9e;
+   transform: scale(.9);
+}
+
 #indicator {
    background-color: #ff0095;
    height: 0.1875rem;
