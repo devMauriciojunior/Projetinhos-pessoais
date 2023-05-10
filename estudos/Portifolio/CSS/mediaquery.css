@@ -1,0 +1,64 @@
+@media (max-width: 992px) {
+   h1, h2 {font-size: 2rem;}
+   p {font-size: 1rem;}
+
+   .Principal {
+      flex-direction: column;
+   }
+
+   .Principal .LadoEsquerdo, .LadoDireito {
+      width: 100%;
+      padding: 0px 50px;
+   }
+
+   .LadoEsquerdo h1 {
+      font-size: 2rem;
+   }
+   .LadoEsquerdo p {
+      font-size: 1rem;
+   }
+
+   .LadoDireito {
+      margin-top: 50px;
+   }
+
+   .LadoDireito img {
+      width: 50%;
+   }
+
+   .Artista .texto1 {
+      flex-direction: column;
+      row-gap: 20px;
+   }
+
+   .Ilustração-Digital .container {
+      grid-template-columns: 100%;
+      gap: 20px;
+   }
+
+   .Tinta-Acrilica .container2 {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .container2 img {
+      width: 70%;
+   }
+}
+
+@media (min-width: 320px) {
+   .navbar {display: none;}
+
+
+   .Artista .texto1 {
+      flex-direction: column;
+      row-gap: 20px;
+   }
+
+   .texto1 h2 {
+      font-size: 1.5rem;
+   }
+   .texto1 p {
+      font-size: 1rem;
+   }
+}

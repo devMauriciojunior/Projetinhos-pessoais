@@ -72,7 +72,7 @@ header {
 
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
    padding: 10px 60px;
 }
 
@@ -127,30 +127,26 @@ header {
 .Principal {
    display: flex;
    align-items: center;
-   height: calc(100vh - 80px);
-   padding: 80px 10px;
+   min-height: calc(100vh - 80px);
+   padding: 50px 10px;
    background-color: var(--corRosaClaro);
 }
 
 .LadoEsquerdo {
    height: 100%;
-   width: 60%;
+   width: 50%;
    padding: 20px 50px;
-
-   display: flex;
-   justify-content: center;
-   flex-flow: column nowrap;
 }  
 
 .LadoEsquerdo h1 {
-   font-size: 2.1rem;
+   font-size: 2.3rem;
    font-family: var(--fontMont);
    color: var(--corMaisEscura);
    margin: 30px 0px;
 }
 
 .LadoEsquerdo p {
-   font-size: 1rem;
+   font-size: 1.2rem;
    font-family: var(--fontMont);
    color: var(--corMaisEscura);
    line-height: 2rem;
@@ -158,15 +154,16 @@ header {
 
 .LadoDireito {
    height: 100%;
-   width: 40%;
+   width: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .LadoDireito img {
-   max-width: 80%;
+   max-width: 70%;
    filter: drop-shadow(0px 15px 10px #5c099479);
+   animation: float 7s ease-in-out infinite;
 }
 
 /* SVG1 */
@@ -182,34 +179,17 @@ svg {
 /* SESSÃO ARTISTA */
 
 .Artista {
-   height: 420px;
+   height: 250px;
+   padding: 30px;
    display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   margin-bottom: 30px;
-}
-
-div.texto1, .texto2 {
-   width: 100%;
-   height: 50%;
-}
-
-.texto1 {
-   display: flex;
-   justify-content: space-evenly;
    align-items: center;
 }
 
-.texto2 {
+.texto1 {
+   width: 100%;
    display: flex;
-   align-items: flex-end;
-   justify-content: center;
-}
-
-.texto2 h3 {
-   font-size: 1.5rem;
-   font-family: var(--fontMont);
-   color: var(--corMaisEscura);
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .Artista h2 {
@@ -219,12 +199,24 @@ div.texto1, .texto2 {
 }
 
 .Artista p {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
    font-family: var(--fontMont);
    color: var(--corMaisEscura);
-   width: 450px;
+   max-width: 450px;
 }
 
+.texto2 {
+   display: flex;
+   align-items: center  ;
+   justify-content: center;
+   height: 200px;
+}
+
+.texto2 h3 {
+   font-size: 1.5rem;
+   font-family: var(--fontMont);
+   color: var(--corMaisEscura);
+}
 /* ILUSTRAÇÃO DIGITAL */
 
 .Ilustração-Digital {
@@ -246,7 +238,6 @@ div.texto1, .texto2 {
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(3, 1fr);
    place-items: center;
-
 }
 
 .container > img {
@@ -258,7 +249,7 @@ div.texto1, .texto2 {
 
 .Ilustração-Tradicional {
    padding: 50px;
-   height: 350px;
+   height: 400px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -273,7 +264,7 @@ div.texto1, .texto2 {
 }
 
 .Ilustração-Tradicional > p {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
    font-family: var(--fontMont);
    color: var(--corMaisEscura);
    margin: 30px;
@@ -283,7 +274,8 @@ div.texto1, .texto2 {
 /* TINTA ACRILÍCA */
 
 .Tinta-Acrilica {
-   padding: 50px 0px;
+   padding: 50px;
+   background-color: var(--corRosaClaro);
 }
 
 .Tinta-Acrilica h2 {
@@ -294,19 +286,29 @@ div.texto1, .texto2 {
 }
 
 .container2 {
-   display: flex;
-   justify-content: center;
-}
-
-.coluna-one {
-   width: 90%;
+   width: 100%;
    display: flex;
    justify-content: center;
    flex-flow: row wrap;
    gap: 30px;
 }
 
-.coluna-one img {
+.container2 img {
    object-fit: cover;
    width: 40%;
+}
+
+
+@keyframes float {
+   0% {
+      transform: translateY(0px);
+   }
+
+   50% {
+      transform: translateY(20px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
 }
