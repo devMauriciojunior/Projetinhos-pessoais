@@ -23,7 +23,7 @@
    }
 
    .LadoDireito img {
-      width: 50%;
+      width: 70%;
    }
 
    .Artista .texto1 {
@@ -88,6 +88,10 @@
    .Ilustração-Tradicional p {
       font-size: 1.1rem;
    }
+
+   footer {
+      font-size: .8rem;
+   }
 }
 
 @media (max-width: 320px) {
@@ -102,5 +106,9 @@
    }
    .texto1 p {
       font-size: 1rem;
+   }
+
+   footer {
+      font-size: .7rem;
    }
 }

@@ -303,6 +303,22 @@ svg {
    height: 550px;
 }
 
+footer {
+   height: 100px;
+   background-color: var(--corRoxa);
+   color: var(--corClara);
+   display: grid;
+   place-items: center;
+   font-family: var(--fontMont);
+}
+
+footer a {
+   color: var(--corRosaClaro);
+}
+
+footer a:hover {
+   color: var(--corClara);
+}
 
 @keyframes float {
    0% {
