@@ -43,12 +43,54 @@
 
    .container2 img {
       width: 70%;
+      height: 100%;
    }
 }
 
-@media (min-width: 320px) {
-   .navbar {display: none;}
 
+@media (max-width: 480px) {
+   header {
+      padding: 30px;
+   }
+
+   header .logo h1 {
+      font-size: 1rem;
+   }
+   header .logo h2 {
+      font-size: .7rem;
+   }
+
+   .LadoDireito, .LadoEsquerdo, .Ilustração-Digital, 
+   .Ilustração-Tradicional, .Tinta-Acrilica {
+      padding: 25px;
+   }
+
+   .Principal h1 {
+      font-size: 1.7rem;
+   }
+   .Principal p {
+      font-size: .9rem;
+      line-height: 1.6rem;
+   }
+
+   .Artista h2, .texto2 h3 {
+      font-size: 1.3rem;
+   }
+   .Artista p {
+      font-size: 1.1rem;
+      text-align: center;
+   }
+
+   .Ilustração-Digital h2, .Ilustração-Tradicional h2, .Tinta-Acrilica h2 {
+      font-size: 1.5rem;
+   }
+
+   .Ilustração-Tradicional p {
+      font-size: 1.1rem;
+   }
+}
+
+@media (max-width: 320px) {
 
    .Artista .texto1 {
       flex-direction: column;

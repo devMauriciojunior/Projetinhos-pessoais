@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      dialog::backdrop {
+         background-color: #be0000;
+      }
+
+      dialog {
+         width: 80%;
+      }
+
+      dialog > img {
+         width: 100%;
+      }
+   
+   </style>
+</head>
+<body>
+   <button id="btn">Abrir Modal</button>
+   <dialog id="modal">
+      <h1>Esse é um titulo</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum officiis laboriosam molestiae cupiditate! Inventore consequuntur id cumque illum dolor. Earum, provident placeat tempore odio error debitis nam temporibus quae quam.</p>
+      <img src="https://i.kym-cdn.com/entries/icons/mobile/000/002/868/XXEverywhere.jpg" alt="">
+      <button id="fechar">Fechar Modal</button>
+   </dialog>
+
+
+   <script>
+      let btn = document.getElementById('btn')
+      let modal = document.getElementById('modal')
+      let fechar = document.getElementById('fechar')
+
+      btn.onclick = function() {
+         modal.show()
+      }
+
+      fechar.onclick = function() {
+         modal.close()
+      }
+   </script>
+</body>
+</html>
