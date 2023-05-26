@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+   <style>
+      body {
+         height: 200vh;
+      }
+
+      .splide, .splide__track {
+         height: 350px;
+      }
+
+      .splide__slide {
+         position: relative;
+         background: url(https://e1.365dm.com/20/02/2048x1152/skysports-red-bull-2020-f1_4917820.jpg);
+
+      }
+      .splide__slide img{
+         width: 100%;
+         height: 130%;
+         object-fit: cover;
+         background: linear-gradient(to right, black, red);
+      }
+
+      h1 {
+         position: absolute;
+         top: 100px;
+         left: 200px;
+         background-color: red;
+         color: #fff;
+         padding: 30px;
+         font-size: 2rem;
+         z-index: 10;
+      }
+
+      .splide__progress__bar {
+         height: 3px;
+         background: #ff0000;
+}
+   </style>
+   <title>Document</title>
+</head>
+<body>
+   <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+         <ul class="splide__list">
+            <li class="splide__slide" data-splide-interval="10000">
+               <h1>TESTE</h1>
+               <img src="https://e1.365dm.com/20/02/2048x1152/skysports-red-bull-2020-f1_4917820.jpg" alt="">
+            </li>
+            <li class="splide__slide" data-splide-interval="10000">
+               <img src="https://pbs.twimg.com/media/Fo_2SnyXgAAHFxY.jpg:large" alt="">
+            </li>
+         </ul>
+      </div>
+      <div class="splide__progress">
+         <div class="splide__progress__bar">
+         </div>
+      </div>
+   </section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+      var splide = new Splide( '.splide', {
+         arrows: false,
+         pagination: false,
+         autoHeight: true,
+         type: "loop",
+         autoplay: true,
+
+      });
+splide.mount();
+</script>
+</body>
+</html>
